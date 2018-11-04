@@ -1,0 +1,358 @@
+.sprEvent__inner {
+  padding: 1% 1% 1% 1.5%;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  overflow: hidden; }
+
+.sprEvent__logoMain {
+  position: absolute;
+  left: 40%;
+  -webkit-transform: translate(-83%, 0);
+  -ms-transform: translate(-83%, 0);
+  transform: translate(-83%, 0);
+  text-align: center;
+  width: 17vh;
+  height: 17vh;
+  padding: 0%;
+  z-index: 5;
+  float: left; }
+
+.sprEvent__logoinner {
+  padding: 0px 4% 4%;
+  background-color: #ffffff; }
+
+.sprEvent__logo {
+  padding: 9% 9%;
+  background: radial-gradient(circle, #024575 0%, #00253F 89%); }
+  .sprEvent__logo > img {
+    width: 100%; }
+
+.sprEvent__row {
+  width: 100%;
+  height: 30%;
+  position: relative; }
+  .sprEvent__row > div {
+    float: left; }
+  .sprEvent__row:last-child {
+    height: 10%; }
+
+.sprEvent__row:after {
+  display: table;
+  content: " "; }
+
+.sprEvent__countTotalTile {
+  display: inline-block;
+  width: 40%;
+  height: 100%;
+  vertical-align: top;
+  padding: 0 0.5% 0.5% 0; }
+
+.sprEvent__countTotalTileInner {
+  padding: 2.5%;
+  max-height: 100%; }
+
+.sprEvent__countTotalFig {
+  display: inline-block;
+  width: 30%;
+  height: 80%;
+  margin: 10px;
+  padding: 1%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+  vertical-align: top; }
+
+.sprEvent__countTotalFig--img {
+  width: 72px;
+  padding: 5%;
+  max-width: 100%;
+  margin: 4% 0 4%; }
+
+.sprEvent__countTotalFigTxt {
+  background-image: -webkit-linear-gradient(92deg, #4f9b47, #b3b946);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px; }
+  .sprEvent__countTotalFigTxt > div {
+    font-size: 32px; }
+
+.sprEvent__countTotalFigLeft {
+  display: inline-block;
+  width: 60%;
+  text-align: left;
+  vertical-align: top;
+  padding: 4% 0 4% 4%; }
+  .sprEvent__countTotalFigLeft .progress {
+    width: 58%; }
+    .sprEvent__countTotalFigLeft .progress .progress-bar {
+      background-color: #4f9b47; }
+
+.sprEvent__countTotalFigLeftNo {
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 1; }
+
+.sprEvent__countTotalFigLeftLabel {
+  font-size: 24px; }
+
+.sprEvent__indivFloorTile {
+  width: 20%;
+  height: 100%;
+  padding: 0 0.5% 0.5% 0;
+  display: inline-block;
+  vertical-align: top; }
+
+.sprEvent__indivFloorTileInner {
+  position: relative;
+  padding: 7% 8%;
+  height: 100%; }
+
+.sprEvent__indivFloorName {
+  line-height: 1; }
+
+.sprEvent__indivFloorNameIcon {
+  text-align: right;
+  font-size: 14px;
+  text-transform: uppercase; }
+
+.sprEvent__indivFloorIcon--img {
+  margin: 0 -2% 0 0;
+  width: 22%;
+  padding: 5% 3% 1%; }
+
+.sprEvent__indivFloorLeftDetails {
+  position: absolute;
+  width: 93%;
+  top: 23%;
+  text-align: left;
+  margin: 0 0 10px 10px; }
+  .sprEvent__indivFloorLeftDetails .progress {
+    width: 60%; }
+
+.sprEvent__indivFloorLeftNo {
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 700; }
+
+.sprEvent__indivFloorLeftLabel {
+  font-size: 16px; }
+
+.sprEvent__indivFloorLeftTotal {
+  text-transform: uppercase;
+  font-size: 14px; }
+
+.sprEvent__indivFloorLeftStateAlert {
+  text-align: right;
+  position: absolute;
+  bottom: 5%;
+  right: 10px;
+  width: 100%; }
+  .sprEvent__indivFloorLeftStateAlert > span {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px 0px 0px 10px;
+    padding: 2% 5% 2% 5%;
+    margin: 0 -7% 0 0;
+    font-size: 13px;
+    text-transform: uppercase; }
+  .sprEvent__indivFloorLeftStateAlert img {
+    width: 5%;
+    max-width: 100%;
+    margin: -5px 5px 0px 10px; }
+
+.sprEvent__actionTile {
+  display: inline-block;
+  width: 40%;
+  height: 100%;
+  vertical-align: top;
+  padding: 0 0.5% 0.5% 0; }
+
+.sprEvent__actionTileInner {
+  padding: 4% 2%;
+  height: 100%;
+  border-radius: 6px;
+  overflow: hidden; }
+
+.sprEvent__actionTileLabel {
+  display: inline-block;
+  font-size: 26px;
+  font-weight: 200; }
+
+.sprEvent__actionTileIcon {
+  float: right;
+  -webkit-transform: translate(0px, -25%);
+  -ms-transform: translate(0px, -25%);
+  transform: translate(0px, -25%);
+  text-align: center;
+  width: 45%; }
+  .sprEvent__actionTileIcon > img {
+    width: 60%; }
+
+.sprEvent__factCarouselTitle {
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0 0 15px; }
+
+.sprEvent__factCarouselSubTitle {
+  font-size: 18px; }
+
+.sprEvent__factCarouselIcon, .sprEvent__factCarouselTxt {
+  display: inline-block;
+  vertical-align: middle; }
+
+.sprEvent__factCarouselIcon {
+  width: 20%;
+  padding: 2% 5%; }
+
+.sprEvent__factCarouselTxt {
+  width: 79%;
+  padding: 0 3%; }
+
+.sprEvent__msgStrip {
+  padding: 0 0.5% 0 0;
+  width: 100%; }
+
+.sprEvent__msgStripInner {
+  padding: 2% 2%;
+  width: 100%;
+  color: #ffffff;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .sprEvent__msgStripInner span {
+    margin: 0 25px 0 0;
+    position: relative; }
+    .sprEvent__msgStripInner span:after {
+      content: ' ';
+      position: absolute;
+      right: -15px;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      background-color: #ffffff;
+      border-radius: 6px; }
+    .sprEvent__msgStripInner span:last-child {
+      content: none; }
+
+.sprEvent__bannerbgicon {
+  display: table-cell;
+  vertical-align: middle;
+  background-image: url(../images/bgPattern.png);
+  background-size: cover;
+  background-position: center; }
+
+.sprEvent__bannerMsg {
+  position: absolute;
+  z-index: 2;
+  height: 200%;
+  width: 99.6%;
+  max-height: 198%;
+  text-align: center;
+  z-index: 50; }
+
+.sprEvent__bannerMsgInner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase; }
+
+.sprEvent__bannerMsgLabel {
+  line-height: 1;
+  font-size: 26px; }
+
+.sprEvent__bannerMsgTitle {
+  font-size: 72px;
+  font-weight: 700; }
+
+.sprEvent__bannerMsgSubTitle {
+  line-height: 1;
+  font-size: 26px; }
+
+.sprEvent__bannerMsgIcon img {
+  width: 11%;
+  margin: 0 0 2%;
+  max-width: 100%; }
+
+.marquee {
+  white-space: nowrap;
+  position: relative;
+  -webkit-animation: scroll 25s linear infinite;
+  animation: scroll 25s linear infinite; }
+
+.marquee:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused; }
+
+@-webkit-keyframes scroll {
+  0% {
+    left: 100%; }
+  100% {
+    left: -100%; } }
+
+@keyframes scroll {
+  0% {
+    left: 100%; }
+  100% {
+    left: -100%; } }
+
+.progress {
+  height: 10px;
+  margin: 4px 0 4px; }
+
+.factCarousel {
+  text-align: center; }
+  .factCarousel .sprEvent__actionTileInner {
+    display: table;
+    width: 100%; }
+  .factCarousel .carousel {
+    display: table-cell;
+    vertical-align: middle; }
+
+.imageCarousel {
+  overflow: hidden; }
+  .imageCarousel .sprEvent__actionTileInner {
+    padding: 0; }
+  .imageCarousel .item {
+    top: -30px; }
+
+.lightGreenGrad {
+  background-image: -webkit-gradient(linear, 0 0, 256 424, from(#b1ba47), color-stop(0.066, #adb746), color-stop(0.066, #abb846), color-stop(0.476, #85ab46), color-stop(0.476, #83ac46), color-stop(0.604, #79a647), color-stop(0.612, #75a746), color-stop(0.664, #72a548), color-stop(0.664, #70a648), color-stop(0.686, #6ea547), color-stop(0.747, #6aa247), color-stop(0.747, #68a347), color-stop(0.8, #64a047), color-stop(0.997, #519a47), color-stop(0.997, #559442), to(#559442));
+  background-image: -webkit-linear-gradient(301.12247deg, #b1ba47, #adb746 6.6%, #abb846 6.6%, #85ab46 47.6%, #83ac46 47.6%, #79a647 60.4%, #75a746 61.2%, #72a548 66.4%, #70a648 66.4%, #6ea547 68.6%, #6aa247 74.7%, #68a347 74.7%, #64a047 80%, #519a47 99.7%, #559442 99.7%, #559442);
+  background-image: -moz-linear-gradient(301.12247deg, #b1ba47, #adb746 6.6%, #abb846 6.6%, #85ab46 47.6%, #83ac46 47.6%, #79a647 60.4%, #75a746 61.2%, #72a548 66.4%, #70a648 66.4%, #6ea547 68.6%, #6aa247 74.7%, #68a347 74.7%, #64a047 80%, #519a47 99.7%, #559442 99.7%, #559442);
+  background-image: -o-linear-gradient(301.12247deg, #b1ba47, #adb746 6.6%, #abb846 6.6%, #85ab46 47.6%, #83ac46 47.6%, #79a647 60.4%, #75a746 61.2%, #72a548 66.4%, #70a648 66.4%, #6ea547 68.6%, #6aa247 74.7%, #68a347 74.7%, #64a047 80%, #519a47 99.7%, #559442 99.7%, #559442);
+  background-image: linear-gradient(148.87753deg, #b1ba47, #adb746 6.6%, #abb846 6.6%, #85ab46 47.6%, #83ac46 47.6%, #79a647 60.4%, #75a746 61.2%, #72a548 66.4%, #70a648 66.4%, #6ea547 68.6%, #6aa247 74.7%, #68a347 74.7%, #64a047 80%, #519a47 99.7%, #559442 99.7%, #559442); }
+
+.redGrad {
+  background-image: -webkit-gradient(linear, 0 0, 253 423.125, from(#d74359), color-stop(0.004, #d44359), color-stop(0.034, #d64658), color-stop(0.042, #d74558), color-stop(0.048, #d64657), color-stop(0.048, #d64858), color-stop(0.097, #d84a58), color-stop(0.245, #db5554), color-stop(0.245, #da5654), color-stop(0.286, #da5954), color-stop(0.288, #dc5854), color-stop(0.337, #dd5d52), color-stop(0.337, #dd5f53), color-stop(0.378, #df6152), color-stop(0.378, #de6252), color-stop(0.463, #e26a51), color-stop(0.463, #e16b51), color-stop(0.489, #e06d4e), color-stop(0.497, #e26c4e), color-stop(0.514, #e2704e), color-stop(0.53, #e3714d), color-stop(0.652, #e87e4c), color-stop(0.691, #ea824b), color-stop(0.691, #e98349), color-stop(0.819, #ee9247), color-stop(0.849, #ee9646), color-stop(0.853, #ee9546), color-stop(0.853, #ed9646), color-stop(0.912, #f19d43), color-stop(0.918, #ee9f43), color-stop(0.926, #f29e43), color-stop(0.928, #f09f43), color-stop(0.981, #f4a642), color-stop(0.987, #f2a742));
+  background-image: -webkit-linear-gradient(300.87656deg, #d74359, #d44359 0.4%, #d64658 3.4%, #d74558 4.2%, #d64657 4.8%, #d64858 4.8%, #d84a58 9.7%, #db5554 24.5%, #da5654 24.5%, #da5954 28.6%, #dc5854 28.8%, #dd5d52 33.7%, #dd5f53 33.7%, #df6152 37.8%, #de6252 37.8%, #e26a51 46.3%, #e16b51 46.3%, #e06d4e 48.9%, #e26c4e 49.7%, #e2704e 51.4%, #e3714d 53%, #e87e4c 65.2%, #ea824b 69.1%, #e98349 69.1%, #ee9247 81.9%, #ee9646 84.9%, #ee9546 85.3%, #ed9646 85.3%, #f19d43 91.2%, #ee9f43 91.8%, #f29e43 92.6%, #f09f43 92.8%, #f4a642 98.1%, #f2a742 98.7%);
+  background-image: -moz-linear-gradient(300.87656deg, #d74359, #d44359 0.4%, #d64658 3.4%, #d74558 4.2%, #d64657 4.8%, #d64858 4.8%, #d84a58 9.7%, #db5554 24.5%, #da5654 24.5%, #da5954 28.6%, #dc5854 28.8%, #dd5d52 33.7%, #dd5f53 33.7%, #df6152 37.8%, #de6252 37.8%, #e26a51 46.3%, #e16b51 46.3%, #e06d4e 48.9%, #e26c4e 49.7%, #e2704e 51.4%, #e3714d 53%, #e87e4c 65.2%, #ea824b 69.1%, #e98349 69.1%, #ee9247 81.9%, #ee9646 84.9%, #ee9546 85.3%, #ed9646 85.3%, #f19d43 91.2%, #ee9f43 91.8%, #f29e43 92.6%, #f09f43 92.8%, #f4a642 98.1%, #f2a742 98.7%);
+  background-image: -o-linear-gradient(300.87656deg, #d74359, #d44359 0.4%, #d64658 3.4%, #d74558 4.2%, #d64657 4.8%, #d64858 4.8%, #d84a58 9.7%, #db5554 24.5%, #da5654 24.5%, #da5954 28.6%, #dc5854 28.8%, #dd5d52 33.7%, #dd5f53 33.7%, #df6152 37.8%, #de6252 37.8%, #e26a51 46.3%, #e16b51 46.3%, #e06d4e 48.9%, #e26c4e 49.7%, #e2704e 51.4%, #e3714d 53%, #e87e4c 65.2%, #ea824b 69.1%, #e98349 69.1%, #ee9247 81.9%, #ee9646 84.9%, #ee9546 85.3%, #ed9646 85.3%, #f19d43 91.2%, #ee9f43 91.8%, #f29e43 92.6%, #f09f43 92.8%, #f4a642 98.1%, #f2a742 98.7%);
+  background-image: linear-gradient(149.12344deg, #d74359, #d44359 0.4%, #d64658 3.4%, #d74558 4.2%, #d64657 4.8%, #d64858 4.8%, #d84a58 9.7%, #db5554 24.5%, #da5654 24.5%, #da5954 28.6%, #dc5854 28.8%, #dd5d52 33.7%, #dd5f53 33.7%, #df6152 37.8%, #de6252 37.8%, #e26a51 46.3%, #e16b51 46.3%, #e06d4e 48.9%, #e26c4e 49.7%, #e2704e 51.4%, #e3714d 53%, #e87e4c 65.2%, #ea824b 69.1%, #e98349 69.1%, #ee9247 81.9%, #ee9646 84.9%, #ee9546 85.3%, #ed9646 85.3%, #f19d43 91.2%, #ee9f43 91.8%, #f29e43 92.6%, #f09f43 92.8%, #f4a642 98.1%, #f2a742 98.7%); }
+
+.darkAquaGrad {
+  background-image: -webkit-gradient(linear, 0 0, 250 419.125, color-stop(0.049, #2d6193), color-stop(0.135, #2e6493), color-stop(0.153, #2f6496), color-stop(0.172, #306695), color-stop(0.174, #306597), color-stop(0.512, #3f80a0), color-stop(0.563, #40869f), color-stop(0.567, #4085a3), color-stop(0.77, #4fa3ad), to(#64ccbb));
+  background-image: -webkit-linear-gradient(300.81526deg, #2d6193 4.9%, #2e6493 13.5%, #2f6496 15.3%, #306695 17.2%, #306597 17.4%, #3f80a0 51.2%, #40869f 56.3%, #4085a3 56.7%, #4fa3ad 77%, #64ccbb);
+  background-image: -moz-linear-gradient(300.81526deg, #2d6193 4.9%, #2e6493 13.5%, #2f6496 15.3%, #306695 17.2%, #306597 17.4%, #3f80a0 51.2%, #40869f 56.3%, #4085a3 56.7%, #4fa3ad 77%, #64ccbb);
+  background-image: -o-linear-gradient(300.81526deg, #2d6193 4.9%, #2e6493 13.5%, #2f6496 15.3%, #306695 17.2%, #306597 17.4%, #3f80a0 51.2%, #40869f 56.3%, #4085a3 56.7%, #4fa3ad 77%, #64ccbb);
+  background-image: linear-gradient(149.18474deg, #2d6193 4.9%, #2e6493 13.5%, #2f6496 15.3%, #306695 17.2%, #306597 17.4%, #3f80a0 51.2%, #40869f 56.3%, #4085a3 56.7%, #4fa3ad 77%, #64ccbb); }
+
+.lightAquaGrad {
+  background-image: -webkit-gradient(linear, 0 0, 252 422.125, from(#85e4ac), color-stop(0.02, #81e4ac), color-stop(0.026, #83e1ac), color-stop(0.529, #5fb9ae), to(#4196b2));
+  background-image: -webkit-linear-gradient(300.83634deg, #85e4ac, #81e4ac 2%, #83e1ac 2.6%, #5fb9ae 52.9%, #4196b2);
+  background-image: -moz-linear-gradient(300.83634deg, #85e4ac, #81e4ac 2%, #83e1ac 2.6%, #5fb9ae 52.9%, #4196b2);
+  background-image: -o-linear-gradient(300.83634deg, #85e4ac, #81e4ac 2%, #83e1ac 2.6%, #5fb9ae 52.9%, #4196b2);
+  background-image: linear-gradient(149.16366deg, #85e4ac, #81e4ac 2%, #83e1ac 2.6%, #5fb9ae 52.9%, #4196b2); }
+
+.yellowGrad {
+  background-image: -webkit-gradient(linear, 0 0, 251 422, from(#efca7a), color-stop(0.059, #ebc477), color-stop(0.059, #edc377), color-stop(0.067, #eac477), color-stop(0.118, #e8be72), color-stop(0.118, #e9bd72), color-stop(0.132, #e7bd73), color-stop(0.187, #e3b76e), color-stop(0.374, #d8a661), color-stop(0.38, #d9a460), color-stop(0.389, #d5a45f), color-stop(0.401, #d7a25e), color-stop(0.409, #d5a35e), color-stop(0.409, #d6a15d), color-stop(0.446, #d49d5a), color-stop(0.503, #d09857), color-stop(0.511, #d19757), color-stop(0.511, #d29657), color-stop(0.515, #d19657), color-stop(0.515, #cf9756), color-stop(0.523, #d09656), color-stop(0.57, #cc9252), color-stop(0.57, #cd9152), color-stop(0.58, #cc9051), color-stop(0.58, #ca9050), color-stop(0.659, #c6884b), color-stop(0.661, #c5894a), color-stop(0.761, #bf7f42), color-stop(0.767, #c07e42), color-stop(0.778, #be7e41), color-stop(0.778, #bf7d41), color-stop(0.824, #bb793d), color-stop(0.879, #b9743b), color-stop(0.879, #ba733b), color-stop(0.887, #b8733a), color-stop(0.94, #b36c34), color-stop(0.945, #b56c35), color-stop(0.957, #b36c34), color-stop(0.957, #b36a33), color-stop(0.971, #b26b33), color-stop(0.971, #b26932));
+  background-image: -webkit-linear-gradient(300.74362deg, #efca7a, #ebc477 5.9%, #edc377 5.9%, #eac477 6.7%, #e8be72 11.8%, #e9bd72 11.8%, #e7bd73 13.2%, #e3b76e 18.7%, #d8a661 37.4%, #d9a460 38%, #d5a45f 38.9%, #d7a25e 40.1%, #d5a35e 40.9%, #d6a15d 40.9%, #d49d5a 44.6%, #d09857 50.3%, #d19757 51.1%, #d29657 51.1%, #d19657 51.5%, #cf9756 51.5%, #d09656 52.3%, #cc9252 57%, #cd9152 57%, #cc9051 58%, #ca9050 58%, #c6884b 65.9%, #c5894a 66.1%, #bf7f42 76.1%, #c07e42 76.7%, #be7e41 77.8%, #bf7d41 77.8%, #bb793d 82.4%, #b9743b 87.9%, #ba733b 87.9%, #b8733a 88.7%, #b36c34 94%, #b56c35 94.5%, #b36c34 95.7%, #b36a33 95.7%, #b26b33 97.1%, #b26932 97.1%);
+  background-image: -moz-linear-gradient(300.74362deg, #efca7a, #ebc477 5.9%, #edc377 5.9%, #eac477 6.7%, #e8be72 11.8%, #e9bd72 11.8%, #e7bd73 13.2%, #e3b76e 18.7%, #d8a661 37.4%, #d9a460 38%, #d5a45f 38.9%, #d7a25e 40.1%, #d5a35e 40.9%, #d6a15d 40.9%, #d49d5a 44.6%, #d09857 50.3%, #d19757 51.1%, #d29657 51.1%, #d19657 51.5%, #cf9756 51.5%, #d09656 52.3%, #cc9252 57%, #cd9152 57%, #cc9051 58%, #ca9050 58%, #c6884b 65.9%, #c5894a 66.1%, #bf7f42 76.1%, #c07e42 76.7%, #be7e41 77.8%, #bf7d41 77.8%, #bb793d 82.4%, #b9743b 87.9%, #ba733b 87.9%, #b8733a 88.7%, #b36c34 94%, #b56c35 94.5%, #b36c34 95.7%, #b36a33 95.7%, #b26b33 97.1%, #b26932 97.1%);
+  background-image: -o-linear-gradient(300.74362deg, #efca7a, #ebc477 5.9%, #edc377 5.9%, #eac477 6.7%, #e8be72 11.8%, #e9bd72 11.8%, #e7bd73 13.2%, #e3b76e 18.7%, #d8a661 37.4%, #d9a460 38%, #d5a45f 38.9%, #d7a25e 40.1%, #d5a35e 40.9%, #d6a15d 40.9%, #d49d5a 44.6%, #d09857 50.3%, #d19757 51.1%, #d29657 51.1%, #d19657 51.5%, #cf9756 51.5%, #d09656 52.3%, #cc9252 57%, #cd9152 57%, #cc9051 58%, #ca9050 58%, #c6884b 65.9%, #c5894a 66.1%, #bf7f42 76.1%, #c07e42 76.7%, #be7e41 77.8%, #bf7d41 77.8%, #bb793d 82.4%, #b9743b 87.9%, #ba733b 87.9%, #b8733a 88.7%, #b36c34 94%, #b56c35 94.5%, #b36c34 95.7%, #b36a33 95.7%, #b26b33 97.1%, #b26932 97.1%);
+  background-image: linear-gradient(149.25638deg, #efca7a, #ebc477 5.9%, #edc377 5.9%, #eac477 6.7%, #e8be72 11.8%, #e9bd72 11.8%, #e7bd73 13.2%, #e3b76e 18.7%, #d8a661 37.4%, #d9a460 38%, #d5a45f 38.9%, #d7a25e 40.1%, #d5a35e 40.9%, #d6a15d 40.9%, #d49d5a 44.6%, #d09857 50.3%, #d19757 51.1%, #d29657 51.1%, #d19657 51.5%, #cf9756 51.5%, #d09656 52.3%, #cc9252 57%, #cd9152 57%, #cc9051 58%, #ca9050 58%, #c6884b 65.9%, #c5894a 66.1%, #bf7f42 76.1%, #c07e42 76.7%, #be7e41 77.8%, #bf7d41 77.8%, #bb793d 82.4%, #b9743b 87.9%, #ba733b 87.9%, #b8733a 88.7%, #b36c34 94%, #b56c35 94.5%, #b36c34 95.7%, #b36a33 95.7%, #b26b33 97.1%, #b26932 97.1%); }
+
+.purpleGrad {
+  background-image: -webkit-gradient(linear, 0 0, 254 421.125, from(#9476f2), color-stop(0.05, #9378ed), color-stop(0.061, #9576ee), color-stop(0.16, #9977e8), color-stop(0.16, #9b76e8), color-stop(0.301, #a278dc), color-stop(0.301, #a477dc), color-stop(0.409, #ad76d1), color-stop(0.464, #af78cb), color-stop(0.543, #b777c1), color-stop(0.586, #bb78bb), color-stop(0.619, #be78b7), color-stop(0.619, #bd79b6), color-stop(0.629, #be78b6), color-stop(0.629, #bf77b7), color-stop(0.643, #c079b4), color-stop(0.653, #c278b2), color-stop(0.771, #ce79a2), color-stop(0.771, #cf78a3), color-stop(0.788, #cf79a0), color-stop(0.792, #cf779d), color-stop(0.802, #d17a9c), color-stop(0.849, #d77896), color-stop(0.859, #d87a94), color-stop(0.873, #d97a92), color-stop(0.902, #dc798e), color-stop(0.902, #de788e), color-stop(0.918, #df7a8c), color-stop(0.918, #e0798c), color-stop(0.936, #e17b89), color-stop(0.936, #e27a88), color-stop(0.975, #e57a82), color-stop(0.975, #e67982), color-stop(0.987, #e87b80), color-stop(0.987, #e97a81), color-stop(0.995, #e97a80), color-stop(0.995, #ea7980), to(#ea7a80));
+  background-image: -webkit-linear-gradient(301.09613deg, #9476f2, #9378ed 5%, #9576ee 6.1%, #9977e8 16%, #9b76e8 16%, #a278dc 30.1%, #a477dc 30.1%, #ad76d1 40.9%, #af78cb 46.4%, #b777c1 54.3%, #bb78bb 58.6%, #be78b7 61.9%, #bd79b6 61.9%, #be78b6 62.9%, #bf77b7 62.9%, #c079b4 64.3%, #c278b2 65.3%, #ce79a2 77.1%, #cf78a3 77.1%, #cf79a0 78.8%, #cf779d 79.2%, #d17a9c 80.2%, #d77896 84.9%, #d87a94 85.9%, #d97a92 87.3%, #dc798e 90.2%, #de788e 90.2%, #df7a8c 91.8%, #e0798c 91.8%, #e17b89 93.6%, #e27a88 93.6%, #e57a82 97.5%, #e67982 97.5%, #e87b80 98.7%, #e97a81 98.7%, #e97a80 99.5%, #ea7980 99.5%, #ea7a80);
+  background-image: -moz-linear-gradient(301.09613deg, #9476f2, #9378ed 5%, #9576ee 6.1%, #9977e8 16%, #9b76e8 16%, #a278dc 30.1%, #a477dc 30.1%, #ad76d1 40.9%, #af78cb 46.4%, #b777c1 54.3%, #bb78bb 58.6%, #be78b7 61.9%, #bd79b6 61.9%, #be78b6 62.9%, #bf77b7 62.9%, #c079b4 64.3%, #c278b2 65.3%, #ce79a2 77.1%, #cf78a3 77.1%, #cf79a0 78.8%, #cf779d 79.2%, #d17a9c 80.2%, #d77896 84.9%, #d87a94 85.9%, #d97a92 87.3%, #dc798e 90.2%, #de788e 90.2%, #df7a8c 91.8%, #e0798c 91.8%, #e17b89 93.6%, #e27a88 93.6%, #e57a82 97.5%, #e67982 97.5%, #e87b80 98.7%, #e97a81 98.7%, #e97a80 99.5%, #ea7980 99.5%, #ea7a80);
+  background-image: -o-linear-gradient(301.09613deg, #9476f2, #9378ed 5%, #9576ee 6.1%, #9977e8 16%, #9b76e8 16%, #a278dc 30.1%, #a477dc 30.1%, #ad76d1 40.9%, #af78cb 46.4%, #b777c1 54.3%, #bb78bb 58.6%, #be78b7 61.9%, #bd79b6 61.9%, #be78b6 62.9%, #bf77b7 62.9%, #c079b4 64.3%, #c278b2 65.3%, #ce79a2 77.1%, #cf78a3 77.1%, #cf79a0 78.8%, #cf779d 79.2%, #d17a9c 80.2%, #d77896 84.9%, #d87a94 85.9%, #d97a92 87.3%, #dc798e 90.2%, #de788e 90.2%, #df7a8c 91.8%, #e0798c 91.8%, #e17b89 93.6%, #e27a88 93.6%, #e57a82 97.5%, #e67982 97.5%, #e87b80 98.7%, #e97a81 98.7%, #e97a80 99.5%, #ea7980 99.5%, #ea7a80);
+  background-image: linear-gradient(148.90387deg, #9476f2, #9378ed 5%, #9576ee 6.1%, #9977e8 16%, #9b76e8 16%, #a278dc 30.1%, #a477dc 30.1%, #ad76d1 40.9%, #af78cb 46.4%, #b777c1 54.3%, #bb78bb 58.6%, #be78b7 61.9%, #bd79b6 61.9%, #be78b6 62.9%, #bf77b7 62.9%, #c079b4 64.3%, #c278b2 65.3%, #ce79a2 77.1%, #cf78a3 77.1%, #cf79a0 78.8%, #cf779d 79.2%, #d17a9c 80.2%, #d77896 84.9%, #d87a94 85.9%, #d97a92 87.3%, #dc798e 90.2%, #de788e 90.2%, #df7a8c 91.8%, #e0798c 91.8%, #e17b89 93.6%, #e27a88 93.6%, #e57a82 97.5%, #e67982 97.5%, #e87b80 98.7%, #e97a81 98.7%, #e97a80 99.5%, #ea7980 99.5%, #ea7a80); }

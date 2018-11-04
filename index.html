@@ -1,0 +1,272 @@
+
+<html ng-app="fomo" ng-controller="mainController">
+  <head>
+    <title>SPR Sale</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:200,400,700,900" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <script type="text/javascript" src="scripts/angular.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+  </head>
+  <body>
+    <div class="sprEvent__main">
+      <div class="sprEvent__inner">
+        <div class="sprEvent__logoMain">
+          <div class="sprEvent__logoinner">
+            <div class="sprEvent__logo"><img src="images/SPRlogoBig.png"/></div>
+          </div>
+        </div>
+        <div class="sprEvent__row">
+          <div class="sprEvent__bannerMsg" ng-if="noFadeBanner &amp;&amp; (bannerInfo.status == 1)">
+            <div class="sprEvent__bannerMsgInner lightAquaGrad">
+              <div class="sprEvent__bannerbgicon">
+                <div class="sprEvent__bannerMsgWrap">
+                  <div class="sprEvent__bannerMsgIcon"><img src="images/congratsIcon.svg"/></div>
+                  <div class="sprEvent__bannerMsgLabel">{{bannerInfo.data.line1}}</div>
+                  <div class="sprEvent__bannerMsgTitle">{{bannerInfo.data.line2}}</div>
+                  <div class="sprEvent__bannerMsgSubTitle">{{bannerInfo.data.line3}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sprEvent__countTotalTile">
+            <div class="sprEvent__countTotalTileInner lightGreenGrad">
+              <div class="sprEvent__countTotalFig"><img class="sprEvent__countTotalFig--img" src="images/shop.svg"/>
+                <div class="sprEvent__countTotalFigTxt">Total Shops
+                  <div>750</div>
+                </div>
+              </div>
+              <div class="sprEvent__countTotalFigLeft">
+                <div class="sprEvent__countTotalFigLeftNo">125</div>
+                <div class="sprEvent__countTotalFigLeftLabel">Shops left</div>
+                <div class="sprEvent__countTotalFigLeftProgress">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:60%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sprEvent__indivFloorTile">
+            <div class="sprEvent__indivFloorTileInner redGrad">
+              <div class="sprEvent__indivFloorNameIcon">
+                <div class="sprEvent__indivFloorName" ng-bind-html="shopStatus.streets[0].name | trustHtml"></div>
+                <div class="sprEvent__indivFloorIcon"><img class="sprEvent__indivFloorIcon--img" src="images/store.svg"/></div>
+              </div>
+              <div class="sprEvent__indivFloorLeftDetails">
+                <div class="sprEvent__indivFloorLeftNo">80</div>
+                <div class="sprEvent__indivFloorLeftLabel">Stores left</div>
+                <div class="progress" ng-show="(shopStatus.streets[0].fomoTerm == 'Progress')">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="{{shopStatus.streets[0].fomoValue}}" aria-valuemin="0" aria-valuemax="100" style="width:{{shopStatus.streets[0].fomoValue}}%"></div>
+                </div>
+                <div class="sprEvent__indivFloorLeftTotal">Total stores -<span>&nbsp;210</span></div>
+              </div>
+              <div class="sprEvent__indivFloorLeftStateAlert" ng-if="(shopStatus.streets[0].fomoTerm != null) &amp;&amp; (shopStatus.streets[0].fomoTerm != 'null') &amp;&amp; (shopStatus.streets[0].fomoTerm != 'Progress')"><span ng-bind-html="shopStatus.streets[0].fomoMessage | trustHtml"><img src="images/timer.svg" ng-if="(shopStatus.streets[0].fomoTerm == 'Filling Fast')"/></span></div>
+            </div>
+          </div>
+          <div class="sprEvent__indivFloorTile">
+            <div class="sprEvent__indivFloorTileInner darkAquaGrad">
+              <div class="sprEvent__indivFloorNameIcon">
+                <div class="sprEvent__indivFloorName" ng-bind-html="shopStatus.streets[1].name | trustHtml"></div>
+                <div class="sprEvent__indivFloorIcon"><img class="sprEvent__indivFloorIcon--img" src="images/store.svg"/></div>
+              </div>
+              <div class="sprEvent__indivFloorLeftDetails">
+                <div class="sprEvent__indivFloorLeftNo">28</div>
+                <div class="sprEvent__indivFloorLeftLabel">Stores left</div>
+                <div class="progress" ng-show="(shopStatus.streets[1].fomoTerm == 'Progress')">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="{{shopStatus.streets[1].fomoValue}}" aria-valuemin="0" aria-valuemax="100" style="width:{{shopStatus.streets[1].fomoValue}}%"></div>
+                </div>
+                <div class="sprEvent__indivFloorLeftTotal">Total stores -<span>&nbsp;55</span></div>
+              </div>
+              <div class="sprEvent__indivFloorLeftStateAlert" ng-if="(shopStatus.streets[1].fomoTerm != null) &amp;&amp; (shopStatus.streets[1].fomoTerm != 'null') &amp;&amp; (shopStatus.streets[1].fomoTerm != 'Progress')"><span ng-bind-html="shopStatus.streets[1].fomoMessage | trustHtml"><img src="images/timer.svg" ng-if="(shopStatus.streets[1].fomoTerm == 'Filling Fast')"/></span></div>
+            </div>
+          </div>
+          <div class="sprEvent__indivFloorTile">
+            <div class="sprEvent__indivFloorTileInner purpleGrad">
+              <div class="sprEvent__indivFloorNameIcon">
+                <div class="sprEvent__indivFloorName" ng-bind-html="shopStatus.streets[2].name | trustHtml"></div>
+                <div class="sprEvent__indivFloorIcon"><img class="sprEvent__indivFloorIcon--img" src="images/store.svg"/></div>
+              </div>
+              <div class="sprEvent__indivFloorLeftDetails">
+                <div class="sprEvent__indivFloorLeftNo">12</div>
+                <div class="sprEvent__indivFloorLeftLabel">Stores left</div>
+                <div class="progress" ng-show="(shopStatus.streets[2].fomoTerm == 'Progress')">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="{{shopStatus.streets[2].fomoValue}}" aria-valuemin="0" aria-valuemax="100" style="width:{{shopStatus.streets[2].fomoValue}}%"></div>
+                </div>
+                <div class="sprEvent__indivFloorLeftTotal">Total stores -<span>&nbsp;90</span></div>
+              </div>
+              <div class="sprEvent__indivFloorLeftStateAlert" ng-if="(shopStatus.streets[2].fomoTerm != null) &amp;&amp; (shopStatus.streets[2].fomoTerm != 'null') &amp;&amp; (shopStatus.streets[2].fomoTerm != 'Progress')"><span ng-bind-html="shopStatus.streets[2].fomoMessage | trustHtml"><img src="images/timer.svg" ng-if="(shopStatus.streets[2].fomoTerm == 'Filling Fast')"/></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="sprEvent__row">
+          <div class="sprEvent__indivFloorTile">
+            <div class="sprEvent__indivFloorTileInner darkAquaGrad">
+              <div class="sprEvent__indivFloorNameIcon">
+                <div class="sprEvent__indivFloorName" ng-bind-html="shopStatus.streets[3].name | trustHtml"></div>
+                <div class="sprEvent__indivFloorIcon"><img class="sprEvent__indivFloorIcon--img" src="images/store.svg"/></div>
+              </div>
+              <div class="sprEvent__indivFloorLeftDetails">
+                <div class="sprEvent__indivFloorLeftNo">60</div>
+                <div class="sprEvent__indivFloorLeftLabel">Stores left</div>
+                <div class="progress" ng-show="(shopStatus.streets[3].fomoTerm == 'Progress')">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="{{shopStatus.streets[3].fomoValue}}" aria-valuemin="0" aria-valuemax="100" style="width:{{shopStatus.streets[3].fomoValue}}%"></div>
+                </div>
+                <div class="sprEvent__indivFloorLeftTotal">Total stores -<span>&nbsp;80</span></div>
+              </div>
+              <div class="sprEvent__indivFloorLeftStateAlert" ng-if="(shopStatus.streets[3].fomoTerm != null) &amp;&amp; (shopStatus.streets[3].fomoTerm != 'null') &amp;&amp; (shopStatus.streets[3].fomoTerm != 'Progress')"><span ng-bind-html="shopStatus.streets[3].fomoMessage | trustHtml"><img src="images/timer.svg" ng-if="(shopStatus.streets[3].fomoTerm == 'Filling Fast')"/></span></div>
+            </div>
+          </div>
+          <div class="sprEvent__indivFloorTile">
+            <div class="sprEvent__indivFloorTileInner lightGreenGrad">
+              <div class="sprEvent__indivFloorNameIcon">
+                <div class="sprEvent__indivFloorName" ng-bind-html="shopStatus.streets[4].name | trustHtml"></div>
+                <div class="sprEvent__indivFloorIcon"><img class="sprEvent__indivFloorIcon--img" src="images/store.svg"/></div>
+              </div>
+              <div class="sprEvent__indivFloorLeftDetails">
+                <div class="sprEvent__indivFloorLeftNo">7</div>
+                <div class="sprEvent__indivFloorLeftLabel">Stores left</div>
+                <div class="progress" ng-show="(shopStatus.streets[4].fomoTerm == 'Progress')">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="{{shopStatus.streets[4].fomoValue}}" aria-valuemin="0" aria-valuemax="100" style="width:{{shopStatus.streets[4].fomoValue}}%"></div>
+                </div>
+                <div class="sprEvent__indivFloorLeftTotal">Total stores -<span>&nbsp;60</span></div>
+              </div>
+              <div class="sprEvent__indivFloorLeftStateAlert" ng-if="(shopStatus.streets[4].fomoTerm != null) &amp;&amp; (shopStatus.streets[4].fomoTerm != 'null') &amp;&amp; (shopStatus.streets[4].fomoTerm != 'Progress')"><span ng-bind-html="shopStatus.streets[4].fomoMessage | trustHtml"><img src="images/timer.svg" ng-if="(shopStatus.streets[4].fomoTerm == 'Filling Fast')"/></span></div>
+            </div>
+          </div>
+          <div class="sprEvent__indivFloorTile">
+            <div class="sprEvent__indivFloorTileInner lightAquaGrad">
+              <div class="sprEvent__indivFloorNameIcon">
+                <div class="sprEvent__indivFloorName" ng-bind-html="shopStatus.streets[5].name | trustHtml"></div>
+                <div class="sprEvent__indivFloorIcon"><img class="sprEvent__indivFloorIcon--img" src="images/store.svg"/></div>
+              </div>
+              <div class="sprEvent__indivFloorLeftDetails">
+                <div class="sprEvent__indivFloorLeftNo">12</div>
+                <div class="sprEvent__indivFloorLeftLabel">Stores left</div>
+                <div class="progress" ng-show="(shopStatus.streets[5].fomoTerm == 'Progress')">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="{{shopStatus.streets[5].fomoValue}}" aria-valuemin="0" aria-valuemax="100" style="width:{{shopStatus.streets[5].fomoValue}}%"></div>
+                </div>
+                <div class="sprEvent__indivFloorLeftTotal">Total stores -<span>&nbsp;110</span></div>
+              </div>
+              <div class="sprEvent__indivFloorLeftStateAlert" ng-if="(shopStatus.streets[5].fomoTerm != null) &amp;&amp; (shopStatus.streets[5].fomoTerm != 'null') &amp;&amp; (shopStatus.streets[5].fomoTerm != 'Progress')"><span ng-bind-html="shopStatus.streets[5].fomoMessage | trustHtml"><img src="images/timer.svg" ng-if="(shopStatus.streets[5].fomoTerm == 'Filling Fast')"/></span></div>
+            </div>
+          </div>
+          <div class="sprEvent__indivFloorTile">
+            <div class="sprEvent__indivFloorTileInner redGrad">
+              <div class="sprEvent__indivFloorNameIcon">
+                <div class="sprEvent__indivFloorName" ng-bind-html="shopStatus.streets[6].name | trustHtml"></div>
+                <div class="sprEvent__indivFloorIcon"><img class="sprEvent__indivFloorIcon--img" src="images/store.svg"/></div>
+              </div>
+              <div class="sprEvent__indivFloorLeftDetails">
+                <div class="sprEvent__indivFloorLeftNo">21</div>
+                <div class="sprEvent__indivFloorLeftLabel">Stores left</div>
+                <div class="progress" ng-show="(shopStatus.streets[6].fomoTerm == 'Progress')">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="{{shopStatus.streets[6].fomoValue}}" aria-valuemin="0" aria-valuemax="100" style="width:{{shopStatus.streets[6].fomoValue}}%"></div>
+                </div>
+                <div class="sprEvent__indivFloorLeftTotal">Total stores -<span>&nbsp;36</span></div>
+              </div>
+              <div class="sprEvent__indivFloorLeftStateAlert" ng-if="(shopStatus.streets[6].fomoTerm != null) &amp;&amp; (shopStatus.streets[6].fomoTerm != 'null') &amp;&amp; (shopStatus.streets[6].fomoTerm != 'Progress')"><span ng-bind-html="shopStatus.streets[6].fomoMessage | trustHtml"><img src="images/timer.svg" ng-if="(shopStatus.streets[6].fomoTerm == 'Filling Fast')"/></span></div>
+            </div>
+          </div>
+          <div class="sprEvent__indivFloorTile">
+            <div class="sprEvent__indivFloorTileInner yellowGrad">
+              <div class="sprEvent__indivFloorNameIcon">
+                <div class="sprEvent__indivFloorName" ng-bind-html="shopStatus.streets[7].name | trustHtml"></div>
+                <div class="sprEvent__indivFloorIcon"><img class="sprEvent__indivFloorIcon--img" src="images/store.svg"/></div>
+              </div>
+              <div class="sprEvent__indivFloorLeftDetails">
+                <div class="sprEvent__indivFloorLeftNo">15</div>
+                <div class="sprEvent__indivFloorLeftLabel">Stores left</div>
+                <div class="progress" ng-show="(shopStatus.streets[7].fomoTerm == 'Progress')">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="{{shopStatus.streets[7].fomoValue}}" aria-valuemin="0" aria-valuemax="100" style="width:{{shopStatus.streets[7].fomoValue}}%"></div>
+                </div>
+                <div class="sprEvent__indivFloorLeftTotal">Total stores -<span>&nbsp;45</span></div>
+              </div>
+              <div class="sprEvent__indivFloorLeftStateAlert" ng-if="(shopStatus.streets[7].fomoTerm != null) &amp;&amp; (shopStatus.streets[7].fomoTerm != 'null') &amp;&amp; (shopStatus.streets[7].fomoTerm != 'Progress')"><span ng-bind-html="shopStatus.streets[7].fomoMessage | trustHtml"><img src="images/timer.svg" ng-if="(shopStatus.streets[7].fomoTerm == 'Filling Fast')"/></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="sprEvent__row">
+          <div class="sprEvent__indivFloorTile">
+            <div class="sprEvent__indivFloorTileInner purpleGrad">
+              <div class="sprEvent__indivFloorNameIcon">
+                <div class="sprEvent__indivFloorName" ng-bind-html="shopStatus.streets[8].name | trustHtml">{{shopStatus.streets[8].name}}</div>
+                <div class="sprEvent__indivFloorIcon"><img class="sprEvent__indivFloorIcon--img" src="images/store.svg"/></div>
+              </div>
+              <div class="sprEvent__indivFloorLeftDetails">
+                <div class="sprEvent__indivFloorLeftNo">8</div>
+                <div class="sprEvent__indivFloorLeftLabel">Stores left</div>
+                <div class="progress" ng-show="(shopStatus.streets[8].fomoTerm == 'Progress')">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="{{shopStatus.streets[8].fomoValue}}" aria-valuemin="0" aria-valuemax="100" style="width:{{shopStatus.streets[8].fomoValue}}%"></div>
+                </div>
+                <div class="sprEvent__indivFloorLeftTotal">Total stores -<span>&nbsp;30</span></div>
+              </div>
+              <div class="sprEvent__indivFloorLeftStateAlert" ng-if="(shopStatus.streets[8].fomoTerm != null) &amp;&amp; (shopStatus.streets[8].fomoTerm != 'null') &amp;&amp; (shopStatus.streets[8].fomoTerm != 'Progress')"><span ng-bind-html="shopStatus.streets[8].fomoMessage | trustHtml"><img src="images/timer.svg" ng-if="(shopStatus.streets[8].fomoTerm == 'Filling Fast')"/></span></div>
+            </div>
+          </div>
+          <div class="sprEvent__actionTile factCarousel">
+            <div class="sprEvent__actionTileInner redGrad">
+              <div class="carousel slide" id="factCarouselSpr" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="item active" ng-class="{'active': $first}">
+                    <div class="sprEvent__factCarouselIcon">
+                      <img src="images/info.svg"/>
+                    </div>
+                    <div class="sprEvent__factCarouselTxt">
+                      <div class="sprEvent__factCarouselTitle">Deal is ending soon</div>
+                      <div class="sprEvent__factCarouselSubTitle" ng-hide="(factsAndOffers.type == 'Other')">Card discount also applies</div>
+                    </div>
+                  </div>
+                  <!-- <div class="item">
+                    <div class="sprEvent__factCarouselIcon">
+                      <img src="images/receiver.svg" ng-show="(factsAndOffers.type == 'Other')"/>
+                    <div class="sprEvent__factCarouselTxt">
+                      <div class="sprEvent__factCarouselTitle">factsAndOffers.title</div>
+                      <div class="sprEvent__factCarouselSubTitle" ng-hide="(factsAndOffers.type == 'Other')">factsAndOffers.subtitle</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="sprEvent__factCarouselIcon">
+                      <img src="images/info.svg"/></div>
+                    <div class="sprEvent__factCarouselTxt">
+                      <div class="sprEvent__factCarouselTitle">Tallest building</div>
+                      <div class="sprEvent__factCarouselSubTitle" ng-hide="(factsAndOffers.type == 'Other')">Chennai's tallest building</div>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sprEvent__actionTile imageCarousel">
+            <div class="sprEvent__actionTileInner">
+              <div class="carousel slide" id="imageCarouselSpr" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="item active"><img class="img-responsive" src="images/image1.jpg" style="width:100%"/></div>
+                  <div class="item"><img class="img-responsive" src="images/image2.jpg" style="width:100%"/></div>
+                  <div class="item"><img class="img-responsive" src="images/image1.jpg" style="width:100%"/></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sprEvent__row">
+          <div class="sprEvent__msgStrip">
+            <div class="sprEvent__msgStripInner">
+              <div class="sprEvent__msgContain marquee">
+                <span class="sprEvent__msgs">Broadcast message one comes here</span>
+                <span class="sprEvent__msgs">Lorem ipsum dolor sit amet</span>
+                <span class="sprEvent__msgs">Broadcast message three comes here, consectetur</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
